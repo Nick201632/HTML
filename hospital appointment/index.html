@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ClinicApp</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>🏥 ClinicApp</h1>
+        <p>Appointment Management</p>
+    </header>
+
+    <main>
+
+        <div class="top-bar">
+            <h2>Today's Appointments</h2>
+
+            <button id="newAppointmentBtn">
+                + New Appointment
+            </button>
+        </div>
+
+        <div class="appointments" id="appointments">
+
+            <div class="appointment">
+                <div>
+                    <strong>Aarav Sharma</strong>
+                    <p>9:00 AM · Dr. Mehta</p>
+                </div>
+
+                <span class="status confirmed">
+                    Confirmed
+                </span>
+            </div>
+
+            <div class="appointment">
+                <div>
+                    <strong>Priya Singh</strong>
+                    <p>9:30 AM · Dr. Rao</p>
+                </div>
+
+                <span class="status waiting">
+                    Waiting
+                </span>
+            </div>
+
+        </div>
+
+        <!-- New Appointment Form -->
+        <div class="appointment-form" id="appointmentForm">
+
+            <h2>New Appointment</h2>
+
+            <label for="patientName">Patient Name</label>
+            <input
+                type="text"
+                id="patientName"
+                placeholder="Enter patient name"
+            >
+
+            <label for="appointmentDate">Date</label>
+            <input
+                type="date"
+                id="appointmentDate"
+            >
+
+            <label for="appointmentTime">Time</label>
+            <input
+                type="time"
+                id="appointmentTime"
+            >
+
+            <label for="doctorName">Doctor</label>
+            <input
+                type="text"
+                id="doctorName"
+                placeholder="Enter doctor name"
+            >
+
+            <button id="saveAppointmentBtn">
+                Save Appointment
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
